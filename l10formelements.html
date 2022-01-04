@@ -8,36 +8,61 @@
 	<form>
 
 		<label for="firstname">First Name</label>
-		<input type="text" name="firstname" id="firstname" class="" autocomplete="off" autofocus/>
+		<input type="text" name="firstname" id="firstname" class="" autocomplete="off" placeholder="Please enter your firstname" autofocus/>
 
 		<br/><br/>
 
 		<label for="lastname">Last Name</label>
-		<input type="text" name="lastname" id="lastname" class="" autocomplete="off" />
+		<input type="text" name="lastname" id="lastname" class="" autocomplete="off" placeholder="Please enter your lastname" />
 
 		<br/><br/>
 
 		<label for="email">Email</label>
-		<input type="email" name="email" id="email" class="" autocomplete="off" />
+		<input type="email" name="email" id="email" class="" autocomplete="off" placeholder="Please enter your email" />
 
 		<br/><br/>
 
 		<label for="password">Password</label>
-		<input type="password" name="password" id="password" class="" />
+		<input type="password" name="password" id="password" class="" placeholder="Please enter your password" />
 
 		<br/><br/>
 
 		<label>Gender</label>
-		<input type="radio" name="gender" id="genderm" class="" /><label for="genderm">Male</label>
-		<input type="radio" name="gender" id="genderf" class="" /><label for="genderf">Female</label>
-		<input type="radio" name="gender" id="gendero" class="" /><label for="gendero">Other</label>
+		<input type="radio" name="gender" id="genderm" class="" value="1" /><label for="genderm">Male</label>
+		<input type="radio" name="gender" id="genderf" class="" value="0"  /><label for="genderf">Female</label>
+		<input type="radio" name="gender" id="gendero" class="" value="2" checked/><label for="gendero">Other</label>
 
 		<br/><br/>
 
 		<label>Fruit</label>
-		<input type="radio" name="fruit" id="genderap" class="" /><label for="genderap">Apple</label>
-		<input type="radio" name="fruit" id="genderor" class="" /><label for="genderor">Orange</label>
-		<input type="radio" name="fruit" id="genderpi" class="" /><label for="genderpi">Pineapple</label>
+		<input type="radio" name="fruit" id="genderap" class="" value="1" /><label for="genderap">Apple</label>
+		<input type="radio" name="fruit" id="genderor" class="" value="2" checked/><label for="genderor">Orange</label>
+		<input type="radio" name="fruit" id="genderpi" class="" value="3"/><label for="genderpi">Pineapple</label>
+
+		<br/><br/>
+
+		<label>Choose your fav color</label>
+		<input type="checkbox" name="color" id="colorrd" class="" value="red" checked/><label for="colorrd">Red</label>
+		<input type="checkbox" name="color" id="colorbk" class="" value="black"/><label for="colorbk">Black</label>
+		<input type="checkbox" name="color" id="colorbe" class="" value="blue" checked/><label for="colorbe">Blue</label>
+		<input type="checkbox" name="color" id="colorgn" class="" value="orange" checked/><label for="colorgn">Green</label>
+
+		<br/><br/>
+
+		<label for="country">Citizen</label>
+		<select name="country" id="country" class="">
+			<option value="mm">Myanmar</option>
+			<option value="thd">Thailand</option>
+			<option value="indo">Indonesia</option>
+			<option value="slk">Srilanka</option>
+			<option value="php">Philipine</option>
+		</select>
+
+
+
+
+
+
 
 	</form>
 
@@ -45,4 +70,9 @@
 </html>
 
 
-<!-- stand alone attribute -->
+<!-- stand alone attribute
+
+autofocus
+checked 
+-->
+
