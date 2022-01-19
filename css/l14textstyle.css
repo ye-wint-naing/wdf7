@@ -1,0 +1,12 @@
+.textalign{
+	/*text-align:left;*/
+	/*text-align: right;*/
+	/*text-align: center;*/
+	text-align: justify;
+}
+
+.textdecoration{
+	/*text-decoration: underline;*/
+	/*text-decoration: overline;*/
+	text-decoration: line-through;
+}
