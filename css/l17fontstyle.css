@@ -1,0 +1,62 @@
+/*1.Local Font Integrate*/
+	/*i.Local Machine Integrate
+	ii.Project Folder Integrate*/
+
+/*body{
+	font-family: Arial;
+}*/
+
+/*.p1{
+	font-family:Arial;
+}
+
+
+.p2{
+	font-family: Century,Arial,"Time New Roman";
+}*/
+
+
+
+	/*ii.Project Folder Integrate*/
+
+
+
+/*at-rules*/
+@font-face{
+	font-family:Stick;
+	src:local('Stick-Regular'),url('../libs/fonts/stick/Stick-Regular.ttf') format('woff');
+}
+
+body{
+	font-family:Stick, sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+/*2.Global Font Integrate*/
+/*body{
+	font-family:Stick,sans-serif;
+}*/
+
+/*.p1{
+	font-family: stiick;
+}
+
+.p2{
+	font-family: Stick,sans-serif;
+}
+
+.p3{
+	font-family:'Akaya Kanadaka', cursive;
+}
+
+*/
+
+
