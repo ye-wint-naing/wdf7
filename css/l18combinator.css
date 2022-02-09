@@ -1,0 +1,90 @@
+/*Tag to Tag*/
+
+/*div span{
+	color: red;
+}*/
+
+
+/*Multi Tags to Tag*/
+
+/*div span p{
+	color: red;
+}*/
+
+
+/*Tag to Class*/
+
+/*div .address{
+	color: red;
+}*/
+
+
+
+/*Multi Tags to Class*/
+
+/*div span .address{
+	color: red;
+}*/
+
+
+
+/*Multi Tags to Same Class*/
+
+/*div span small.name{
+	color:red;
+}*/
+
+
+/*Class to Class*/
+/*
+.money .currency{
+	color: red;
+}*/
+
+
+/*Multi Class to Class*/
+
+/*.bank .money .currency{
+	color: red;
+}*/
+
+
+/*Class to Tag*/
+/*.container p{
+	color: red;
+}*/
+
+
+/*Class to Multi Tags*/
+/*.container b span{
+	color: red;
+}*/
+
+
+/*Same Class*/
+/*.mobile.jpn{
+	color: green;
+}
+
+.mobile.cn{
+	color: red;
+}
+
+.mobile.us{
+	color: blue;
+}*/
+
+
+/*Class to Same Class*/
+
+/*.vehicle .car.jpn{
+	color: red;
+}
+
+.vehicle .car.cn{
+	color: blue;
+}
+
+.vehicle .car.indo{
+	color: green;
+}*/
