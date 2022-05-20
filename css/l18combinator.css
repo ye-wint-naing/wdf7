@@ -88,3 +88,35 @@
 .vehicle .car.indo{
 	color: green;
 }*/
+
+
+/*Class to Tag by group selector*/
+
+/*.div1 p,.div1 b{
+	color: red;
+}*/
+
+
+
+/*Child Selector ( > )*/
+
+/*.div2 > p{
+	color: red;
+}*/
+
+
+
+/*Sibling Selectors (2 types)*/
+/*(i) General Sibling Selector ( ~ )*/
+
+/*.div4 ~ b{
+	color: red;
+}*/
+
+
+
+/*(ii) Adjecent Sibling Selector ( + )*/
+
+/*.div7 + p{
+	color: red;
+}*/
