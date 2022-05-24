@@ -237,7 +237,180 @@ let sbl = getfirstli.nextElementSibling;
 // Previous Element Sibling
 		// list item 1 list item 2     list item 3        list item 2
 let psbl= getfirstli.nextElementSibling.nextElementSibling.previousElementSibling;
-console.log(psbl);
+// console.log(psbl);
 
 
-// 23ES
+
+
+// Create Element
+
+const newli = document.createElement("li");
+
+
+// Add ID
+newli.id = "new-item";
+
+// Add Class
+newli.className = "list-group-item";
+// newli.className = "delete-me";
+// newli.className = "list-group-item delete-me";
+// newli.classList.add("delete-i","hide-me");
+
+
+
+// Add Attribute = setAttribute(qulifiedName, value);
+newli.setAttribute("title","newitem");
+
+
+// newli.textContent = "hay";
+// newli.innerText = "hi";
+// newli.innerHTML = `List Item 6 <a href="#" id="delete-item5" class="delete-item"><i class="far fa-trash-alt"></i></a>`;
+
+
+// Create Text Node
+
+newli.appendChild(document.createTextNode("Save Myanmar"));
+// console.log(newli);
+
+
+// <li id="new-item" class="list-group-item" title="newitem">Save Myanmar</li>
+
+
+
+const newlink = document.createElement("a");
+
+// Add href
+newlink.href = "#";
+
+// Add ID
+newlink.id = "delete-item6";
+
+
+// Add Class
+newlink.classList.add("delete-item");
+
+
+newlink.innerHTML = `<i class="far fa-trash-alt"></i>`;
+
+
+// console.log(newlink);
+
+// <a href="#" id="delete-item5" class="delete-item"><i class="far fa-trash-alt"></i></a>
+
+newli.appendChild(newlink);
+// console.log(newli);
+
+
+document.querySelector("ul.list-group").appendChild(newli);
+
+
+
+
+// Replace Element
+
+const newtitleh2 = document.createElement("h2");
+
+newtitleh2.id = "tasktitle";
+
+var newcaption = document.createTextNode("All My Lists");
+newtitleh2.appendChild(newcaption);
+
+
+// console.log(newtitleh2);
+
+
+const oldtitleh4 = document.getElementById("tasktitle");
+// console.log(oldtitleh4);
+
+
+
+
+// replaceChild(new,old);
+
+const getcardaction = document.querySelector(".card-action");
+
+getcardaction.replaceChild(newtitleh2,oldtitleh4);
+
+
+
+// Remove ELement (self)
+
+const getlis = document.querySelectorAll("li"); //Node List
+// console.log(getlis);
+// console.log(getlis[0]);
+// getlis[0].remove();
+// getlis[5].remove();
+
+
+
+// Remove Child Element
+const getfirstul = document.querySelector("ul");
+// console.log(getfirstul);
+
+// getfirstul.remove();
+
+// getfirstul.removeChild(getlis[5]);
+// getfirstul.removeChild(getlis[0]);
+
+
+
+// className vs classList
+
+const firstli = document.querySelector("li:first-child");
+// console.log(firstli);
+// console.log(firstli.children); //HTML Collection
+// console.log(firstli.children[0]);
+
+let firstlink;
+				// a
+firstlink = firstli.children[0];
+// console.log(firstli.children[0].className);
+
+// a
+// firstlink.className = "delete-myself";
+// firstlink.className = "delete-item delete-myself";
+// firstlink.className = "delete-item delete-me delete-myself";
+
+				
+// firstlink = firstlink.classList; //DOM Token List
+// console.log(firstlink);
+// console.log(firstlink[0]);
+// console.log(firstlink[1]);
+
+
+// a
+// firstlink.classList.add("delete-ourserve");
+// firstlink.classList.add("delete-myself");
+// firstlink.classList.add("delete-myself","delete-ourserve");
+
+// firstlink.className = "delete-item delete-me delete-myself delete-ourserve";
+// firstlink.className = "delete-item delete-me delete-myself";
+
+// firstlink.classList.remove("delete-myself");
+// firstlink.classList.remove("delete-myself","delete-ourserve");
+
+
+// replace(old,new);
+// firstlink.className = "delete-item delete-myself";
+// firstlink.classList.replace("delete-me","delete-myself");
+// firstlink.classList.replace("delete-item","delete-ourserve");
+
+if(firstlink.classList.contains("delete-me")){
+	console.log("yes");
+}else{
+	console.log("no");
+}
+
+
+
+if(firstlink.className === "delete-item delete-me"){
+	console.log("yes");
+}else{
+	console.log("no");
+}
+
+console.log(firstlink.className);
+
+
+
+// 24CT
